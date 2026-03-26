@@ -25,3 +25,7 @@ python manage.py createsuperuser
 # Chạy backend
 
 python manage.py runserver
+
+# Chạy frontend
+
+npm run dev
