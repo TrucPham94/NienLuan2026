@@ -4,6 +4,7 @@ from datetime import date
 
 class ContractSerializer(serializers.ModelSerializer):
     employee_name = serializers.CharField(source='employee.full_name', read_only=True)
+    employee_code = serializers.CharField(source='employee.code', read_only=True)
     is_expiring_soon = serializers.SerializerMethodField()
 
     class Meta:
