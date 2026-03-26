@@ -12,3 +12,16 @@ python manage.py startapp departments
 python manage.py startapp contracts
 python manage.py startapp salaries
 python manage.py startapp reports
+
+# Migrate
+
+python manage.py makemigrations
+python manage.py migrate
+
+# Tạo tài khoản admin
+
+python manage.py createsuperuser
+
+# Chạy backend
+
+python manage.py runserver
