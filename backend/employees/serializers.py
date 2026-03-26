@@ -4,6 +4,7 @@ from .models import Employee
 class EmployeeSerializer(serializers.ModelSerializer):
     department_name = serializers.CharField(source='department.name', read_only=True)
     position_name = serializers.CharField(source='position.name', read_only=True)
+    code = serializers.CharField(read_only=True)
 
     class Meta:
         model = Employee
@@ -12,6 +13,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
 class EmployeeListSerializer(serializers.ModelSerializer):
     department_name = serializers.CharField(source='department.name', read_only=True)
     position_name = serializers.CharField(source='position.name', read_only=True)
+    code = serializers.CharField(read_only=True)
 
     class Meta:
         model = Employee
